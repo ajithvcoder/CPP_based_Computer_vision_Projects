@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+class Book{
+    public:
+        string title;
+        string author;
+        int pages;
+        Book(){
+            title = "no title";
+            author = "no author";
+            pages =0;
+        }
+        Book(string aTitle, string aAuthor, int aPages){
+            title = aTitle;
+            author = aAuthor;
+            pages = aPages;
+        }
+
+        bool bigBook(){
+            if (pages >= 500){ 
+                return true;
+            }
+            return false;
+        }
+};
+
+
+int main()
+{
+    Book book1("Harry Potter","JK Rowling",400);
+    // book1.title = "Harry potter";
+    // book1.author = "JK Rowling";
+    // book1.pages = 500;
+    Book book2;
+    Book book3("Lord of Rings","totem",600);
+    cout<<book1.pages<<endl;
+    cout<<book2.pages<<endl;
+    cout<<book1.bigBook()<<endl;
+    
+    return 0;
+}
