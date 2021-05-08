@@ -29,6 +29,8 @@
     - Object Functions
     - Getters & Setters
     - Inheritance
+    - simple header
+    - standard header
 
 - Credits
 
